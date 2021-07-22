@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo hàm nhận vào hai tham số. Nếu giá trị của tham số thứ nhất lớn hơn tham số thứ hai, hiển thị hộp thoại thông báo cho người dùng. Nếu giá trị của tham số thứ nhất nhỏ hơn hoặc bằng tham số thứ hai, trả về tổng của hai tham số.</title>
+</head>
+<body>
+<input type="text" id="number">
+<input type="text" id="number1">
+<button onclick="addDoiso()">created</button>
+<p id="ketqua"></p>
+<script>
+    function addDoiso(){
+        number = +document.getElementById("number").value;
+        number1 = +document.getElementById("number1").value;
+        if (number > number1){
+        document.getElementById("ketqua").innerText = "Tham số thứ nhất lớn hơn tham số thứ 2 !!!"
+        }else {
+            document.getElementById("ketqua").innerText = "Tổng 2 tham số :"+ (number + number1);
+        }
+
+
+    }
+</script>
+</body>
+</html>
